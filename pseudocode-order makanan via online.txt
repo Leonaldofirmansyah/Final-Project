@@ -1,0 +1,21 @@
+#Proses order makanan via online
+
+READ AND WRITE "nama" as STRING
+READ AND WRITE "alamat" as STRING
+STORE "nama" with "Leonaldo"
+STORE "alamat" with "Cijambe Kulon"
+STORE "saldo" with "100000"
+STORE "martabak" with "Martabak Manis"
+STORE "harga" with 0
+STORE "jumlah" with 4
+STORE "total-harga" with 0
+
+IF "martabak" equal "Martabak Manis"
+    STORE "harga" with "jumlah" times 25000
+ELSE
+    STORE "total-harga" with "jumlah" times 100000
+
+IF "saldo" more than or equal "total-harga"
+    PRINT "pesanan berhasil di buat"
+ELSE
+    PRINT "pilih metode pembayaran lain"
